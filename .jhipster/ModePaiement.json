@@ -1,0 +1,44 @@
+{
+  "applications": "*",
+  "changelogDate": "20230215180612",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "mode_paiement",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength", "required"],
+      "fieldValidateRulesMaxlength": "150"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ModePaiement",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "annee",
+      "otherEntityRelationshipName": "modePaiement",
+      "relationshipName": "annee",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityName": "passport",
+      "otherEntityRelationshipName": "modePaiement",
+      "relationshipName": "passport",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "modePaiement",
+      "relationshipName": "client",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "serviceClass"
+}

@@ -1,0 +1,38 @@
+{
+  "applications": "*",
+  "changelogDate": "20230215180611",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "profil",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength", "required"],
+      "fieldValidateRulesMaxlength": "150"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Profil",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "nom",
+      "otherEntityName": "acces",
+      "otherEntityRelationshipName": "profil",
+      "ownerSide": true,
+      "relationshipName": "acces",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "annee",
+      "otherEntityRelationshipName": "profil",
+      "relationshipName": "annee",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "serviceClass"
+}

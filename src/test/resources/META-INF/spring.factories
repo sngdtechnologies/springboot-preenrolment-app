@@ -1,0 +1,1 @@
+org.springframework.test.context.ContextCustomizerFactory = org.ps.pecap.config.TestContainersSpringContextCustomizerFactory

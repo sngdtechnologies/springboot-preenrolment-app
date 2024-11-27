@@ -1,0 +1,11 @@
+id;nom;date_debut;date_fin;is_verrouiller;is_cloturer
+1;c application Consultant;2023-02-15;2023-02-15;false;true
+2;Checking;2023-02-14;2023-02-15;true;false
+3;Soudan Pays-Bas;2023-02-15;2023-02-14;true;true
+4;Soap brand d'Azur;2023-02-14;2023-02-15;true;true
+5;Montorgueil Granite;2023-02-15;2023-02-15;true;true
+6;Ergonomic;2023-02-14;2023-02-15;true;false
+7;Soft;2023-02-15;2023-02-15;false;false
+8;hack;2023-02-14;2023-02-15;true;false
+9;relationships hacking;2023-02-14;2023-02-15;true;false
+10;parsing payment Refined;2023-02-15;2023-02-15;true;true

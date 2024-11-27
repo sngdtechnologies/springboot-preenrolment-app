@@ -1,0 +1,27 @@
+{
+  "pecapApp": {
+    "modePaiement": {
+      "home": {
+        "title": "ModePaiements",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Mode Paiement",
+        "createOrEditLabel": "Créer ou éditer un Mode Paiement",
+        "notFound": "Aucun Mode Paiement trouvé"
+      },
+      "created": "Un nouveau Mode Paiement a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Mode Paiement avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Mode Paiement avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Mode Paiement {{ id }} ?"
+      },
+      "detail": {
+        "title": "Mode Paiement"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "annee": "Annee",
+      "passport": "Passport",
+      "client": "Client"
+    }
+  }
+}

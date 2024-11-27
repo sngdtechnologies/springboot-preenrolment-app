@@ -1,0 +1,26 @@
+{
+  "pecapApp": {
+    "typePassport": {
+      "home": {
+        "title": "TypePassports",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Type Passport",
+        "createOrEditLabel": "Créer ou éditer un Type Passport",
+        "notFound": "Aucun Type Passport trouvé"
+      },
+      "created": "Un nouveau Type Passport a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Type Passport avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Type Passport avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Type Passport {{ id }} ?"
+      },
+      "detail": {
+        "title": "Type Passport"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "annee": "Annee",
+      "passport": "Passport"
+    }
+  }
+}

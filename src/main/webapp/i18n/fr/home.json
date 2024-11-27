@@ -1,0 +1,22 @@
+{
+  "home": {
+    "title": "Bienvenue sur le portail de pré-enrôlement du passeport électronique du Cameroun",
+    "subtitle": "Ceci est notre page d'accueil",
+    "logged": {
+      "message": "Vous êtes connecté en tant que \"{{username}}\"."
+    },
+    "question": "Si vous avez des questions à propos de Pecap, contactez le service client :",
+    "link": {
+      "homepage": "Page d'accueil de JHipster",
+      "stackoverflow": "JHipster sur Stack Overflow",
+      "bugtracker": "JHipster bug tracker",
+      "chat": "JHipster public chat room",
+      "follow": "Suivez @jhipster sur Twitter",
+      "phone": "+(237) 6 53 03 56 32",
+      "info": "Plus d'info sur nous",
+      "mail": "sngdtechnologies@gmail.com"
+    },
+    "like": "Si vous aimez JHipster, donnez nous une étoile sur",
+    "github": "GitHub "
+  }
+}

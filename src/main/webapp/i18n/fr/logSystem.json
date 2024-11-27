@@ -1,0 +1,26 @@
+{
+  "pecapApp": {
+    "logSystem": {
+      "home": {
+        "title": "LogSystems",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Log System",
+        "createOrEditLabel": "Créer ou éditer un Log System",
+        "notFound": "Aucun Log System trouvé"
+      },
+      "created": "Un nouveau Log System a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Log System avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Log System avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Log System {{ id }} ?"
+      },
+      "detail": {
+        "title": "Log System"
+      },
+      "id": "ID",
+      "eventDate": "Event Date",
+      "login": "Login",
+      "message": "Message"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "pecapApp": {
+    "acces": {
+      "home": {
+        "title": "Acces",
+        "refreshListLabel": "Actualiser la liste",
+        "notFound": "Aucun Acces trouvé"
+      },
+      "detail": {
+        "title": "Acces"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "code": "Code",
+      "annee": "Annee",
+      "profil": "Profil"
+    }
+  }
+}

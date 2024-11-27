@@ -1,0 +1,42 @@
+{
+  "applications": "*",
+  "changelogDate": "20230215180614",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "passport",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "50"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Passport",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "modePaiement",
+      "otherEntityRelationshipName": "passport",
+      "relationshipName": "modePaiement",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "typePassport",
+      "otherEntityRelationshipName": "passport",
+      "relationshipName": "typePassport",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "annee",
+      "otherEntityRelationshipName": "passport",
+      "relationshipName": "annee",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "serviceClass"
+}

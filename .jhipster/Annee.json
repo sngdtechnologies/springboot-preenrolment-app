@@ -1,0 +1,77 @@
+{
+  "applications": "*",
+  "changelogDate": "20230215180608",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "annee",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength", "required"],
+      "fieldValidateRulesMaxlength": "150"
+    },
+    {
+      "fieldName": "dateDebut",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "dateFin",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "isVerrouiller",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "isCloturer",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Annee",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "acces",
+      "otherEntityRelationshipName": "annee",
+      "relationshipName": "acces",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "etatProcedure",
+      "otherEntityRelationshipName": "annee",
+      "relationshipName": "etatProcedure",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "passport",
+      "otherEntityRelationshipName": "annee",
+      "relationshipName": "passport",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "profil",
+      "otherEntityRelationshipName": "annee",
+      "relationshipName": "profil",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "modePaiement",
+      "otherEntityRelationshipName": "annee",
+      "relationshipName": "modePaiement",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "typePassport",
+      "otherEntityRelationshipName": "annee",
+      "relationshipName": "typePassport",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

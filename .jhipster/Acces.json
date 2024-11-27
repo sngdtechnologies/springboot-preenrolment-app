@@ -1,0 +1,43 @@
+{
+  "applications": "*",
+  "changelogDate": "20230215180609",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "acces",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength", "required", "unique"],
+      "fieldValidateRulesMaxlength": "50"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength", "required", "unique"],
+      "fieldValidateRulesMaxlength": "10"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Acces",
+  "pagination": "infinite-scroll",
+  "readOnly": true,
+  "relationships": [
+    {
+      "otherEntityName": "annee",
+      "otherEntityRelationshipName": "acces",
+      "relationshipName": "annee",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityName": "profil",
+      "otherEntityRelationshipName": "acces",
+      "ownerSide": false,
+      "relationshipName": "profil",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

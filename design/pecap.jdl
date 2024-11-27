@@ -1,0 +1,98 @@
+entity Annee {
+	nom String maxlength(150) required,
+	dateDebut LocalDate,
+	dateFin LocalDate,
+	isVerrouiller Boolean required,
+	isCloturer Boolean required
+}
+
+entity Acces{
+	nom String maxlength(50) required unique,
+	code String maxlength(10) required unique
+}
+
+entity Client {
+	nom String maxlength(150) required,
+    prenom String maxlength(150)  required,
+	photoUrl String,
+	dateNaiss LocalDate required,
+    anneeNaiss String maxlength(4),
+	lieuNaiss String maxlength(150) required,
+	genre String maxlength(50) required,
+	typeDemande String maxlength(254) required,
+    email String maxlength(150) required,
+    destVoyageP String maxlength(254) required,
+    motifDeplacement String maxlength(254) required,
+    paysNaissance String maxlength(150) required,
+    regionNaiss String maxlength(150) required,
+    departeNaiss String maxlength(150) required,
+    lieuNaiss String maxlength(150) required,
+    telephone String maxlength(20) required,
+    pays String maxlength(100) required,
+    region String maxlength(150) required,
+    departement String maxlength(150) required,
+    lieu String maxlength(150) required,
+    rue String maxlength(150) required,
+    profession String maxlength(150) required,
+    prenomMere String maxlength(150) required,
+    nomMere String maxlength(150) required required,
+    prenomPere String maxlength(150) required required required,
+    nomPere String maxlength(150) required,
+    formatCni String maxlength(254) required,
+    numeroCni Integer required,
+    dateDelivCni LocalDate required,
+    dateExpCni LocalDate required,
+}
+
+entity Profil {
+ nom String maxlength(150) required
+}
+
+entity ModePaiement {
+	nom String maxlength(150) required
+}
+
+entity EtatProcedure {
+	etatPreEnrole String maxlength(50),
+    etatEnrole String maxlength(50),
+    etatRetrait String maxlength(150)
+}
+
+entity Passport {
+	nom String maxlength(50)
+}
+
+entity TypePassport {
+	nom String maxlength(50)
+}
+
+entity LogSystem{
+	eventDate Instant required,
+	login String maxlength(50) required,
+	message String required,
+}
+
+relationship OneToMany {
+    Annee to Acces{annee required},
+    Annee to EtatProcedure{annee required},
+    Annee to Passport{annee required},
+    Annee to Profil{annee required},
+    Annee to ModePaiement{annee required},
+    Annee to TypePassport{annee required},
+    Passport to ModePaiement{passport required},
+    Passport to TypePassport{passport required},
+    Client to ModePaiement{client required},
+    Client to EtatProcedure{client required}
+}
+
+relationship ManyToMany {
+	Profil{acces(nom)} to Acces{profil}
+}
+
+paginate ModePaiement, Passport, EtatProcedure, Client with pagination
+paginate Annee, Profil, Acces, TypePassport with infinite-scroll
+
+readOnly Acces
+
+service all with serviceClass
+

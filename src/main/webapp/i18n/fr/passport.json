@@ -1,0 +1,27 @@
+{
+  "pecapApp": {
+    "passport": {
+      "home": {
+        "title": "Passports",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Passport",
+        "createOrEditLabel": "Créer ou éditer un Passport",
+        "notFound": "Aucun Passport trouvé"
+      },
+      "created": "Un nouveau Passport a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Passport avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Passport avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Passport {{ id }} ?"
+      },
+      "detail": {
+        "title": "Passport"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "modePaiement": "Mode Paiement",
+      "typePassport": "Type Passport",
+      "annee": "Annee"
+    }
+  }
+}

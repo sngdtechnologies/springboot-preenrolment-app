@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!--
+        Added the constraints for entity ModePaiement.
+    -->
+    <changeSet id="20230215180612-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="annee_id"
+                                 baseTableName="mode_paiement"
+                                 constraintName="fk_mode_paiement__annee_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="annee"/>
+
+        <addForeignKeyConstraint baseColumnNames="passport_id"
+                                 baseTableName="mode_paiement"
+                                 constraintName="fk_mode_paiement__passport_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="passport"/>
+
+        <addForeignKeyConstraint baseColumnNames="client_id"
+                                 baseTableName="mode_paiement"
+                                 constraintName="fk_mode_paiement__client_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="client"/>
+    </changeSet>
+</databaseChangeLog>

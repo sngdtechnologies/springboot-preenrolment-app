@@ -1,0 +1,28 @@
+{
+  "pecapApp": {
+    "etatProcedure": {
+      "home": {
+        "title": "EtatProcedures",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Etat Procedure",
+        "createOrEditLabel": "Créer ou éditer un Etat Procedure",
+        "notFound": "Aucun Etat Procedure trouvé"
+      },
+      "created": "Un nouveau Etat Procedure a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Etat Procedure avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Etat Procedure avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Etat Procedure {{ id }} ?"
+      },
+      "detail": {
+        "title": "Etat Procedure"
+      },
+      "id": "ID",
+      "etatPreEnrole": "Etat Pre Enrole",
+      "etatEnrole": "Etat Enrole",
+      "etatRetrait": "Etat Retrait",
+      "annee": "Annee",
+      "client": "Client"
+    }
+  }
+}

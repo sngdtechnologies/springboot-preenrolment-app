@@ -1,0 +1,49 @@
+{
+  "applications": "*",
+  "changelogDate": "20230215180613",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "etat_procedure",
+  "fields": [
+    {
+      "fieldName": "etatPreEnrole",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "50"
+    },
+    {
+      "fieldName": "etatEnrole",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "50"
+    },
+    {
+      "fieldName": "etatRetrait",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "150"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "EtatProcedure",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "annee",
+      "otherEntityRelationshipName": "etatProcedure",
+      "relationshipName": "annee",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "etatProcedure",
+      "relationshipName": "client",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "serviceClass"
+}
